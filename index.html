@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biottos Lädeli – Geschenkkörbe aus Guntershausen</title>
+    <meta
+      name="description"
+      content="Regionale Geschenkkörbe von Biottos Lädeli in Guntershausen, Thurgau. Finde mit unserem Geschenk-Finder den passenden Geschenkkorb und bestelle einfach per WhatsApp."
+    />
+    <meta
+      name="keywords"
+      content="Geschenkkörbe Guntershausen, Geschenkkorb Thurgau, Geschenke Guntershausen, Geschenkkörbe Thurgau, regionale Geschenke Thurgau, Biottos Lädeli"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Biottos Lädeli Startseite">
+          <span class="brand-mark">B</span>
+          <span class="brand-text">
+            <strong>Biottos Lädeli</strong>
+            <small>Guntershausen</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Hauptnavigation">
+          <a href="#top">Startseite</a>
+          <a href="#finder">Geschenk-Finder</a>
+          <a href="#produkte">Geschenkkörbe</a>
+          <a href="#geschenke">Geschenke</a>
+          <a href="#saisonal">Saisonal</a>
+          <a href="#ueber-uns">Über uns</a>
+          <a href="#abholung">Abholung</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <a href="#finder" class="btn btn-primary nav-cta">Geschenk-Finder</a>
+
+        <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <a href="#top">Startseite</a>
+      <a href="#finder">Geschenk-Finder</a>
+      <a href="#produkte">Geschenkkörbe</a>
+      <a href="#geschenke">Geschenke</a>
+      <a href="#saisonal">Saisonal</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#abholung">Abholung</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Biottos Lädeli</p>
+            <h1>Das passende Geschenk. Einfach gefunden.</h1>
+            <p class="lead">
+              Beantworte ein paar kurze Fragen und entdecke den Geschenkkorb, der am besten zu deinem Anlass und deinem Budget passt.
+            </p>
+            <div class="hero-actions">
+              <a href="#finder" class="btn btn-primary">Geschenk-Finder starten</a>
+              <a href="#produkte" class="btn btn-secondary">Geschenkkörbe entdecken</a>
+            </div>
+            <div class="location-line">Abholung in Guntershausen</div>
+          </div>
+
+          <div class="hero-visual" aria-label="Geschenkkörbe von Biottos Lädeli">
+            <div class="photo-card photo-one">
+              <div class="photo-label">Gross & Guet</div>
+            </div>
+            <div class="photo-card photo-two">
+              <div class="photo-label">Fein & Guet</div>
+            </div>
+            <div class="photo-card photo-three">
+              <div class="photo-label">Chli & Fii</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-products" id="produkte">
+        <div class="container narrow">
+          <p class="eyebrow center">Unsere Geschenkkörbe</p>
+          <h2>Drei Geschenkkörbe. Drei Größen.</h2>
+          <p class="section-text center">
+            Ob kleine Aufmerksamkeit oder grosszügiges Geschenk – finde den passenden Korb für deinen Anlass.
+          </p>
+        </div>
+
+        <div class="container product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="section finder-section" id="finder">
+        <div class="container finder-shell">
+          <div class="finder-panel">
+            <div class="finder-header">
+              <div>
+                <p class="eyebrow">Geschenk-Finder</p>
+                <h2>Welcher Geschenkkorb passt zu dir?</h2>
+              </div>
+            </div>
+
+            <div class="finder-copy">
+              <p>Beantworte ein paar kurze Fragen und wir finden den passenden Geschenkkorb für dich.</p>
+            </div>
+
+            <div class="finder-card">
+              <div id="finder-content" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-strip">
+        <div class="container cta-inner">
+          <div>
+            <p class="eyebrow">Nicht sicher, welcher Korb passt?</p>
+            <h3>Wir helfen dir bei der Auswahl.</h3>
+          </div>
+          <a href="#finder" class="btn btn-primary">Geschenk-Finder starten</a>
+        </div>
+      </section>
+
+      <section class="section regional" id="regional">
+        <div class="container two-col">
+          <div>
+            <p class="eyebrow">Regional</p>
+            <h2>Persönlich. Regional. Aus Guntershausen.</h2>
+          </div>
+          <p>
+            Besondere Geschenke, persönlich zusammengestellt.
+          </p>
+        </div>
+      </section>
+
+      <section class="section category-section" id="geschenke">
+        <div class="container">
+          <p class="eyebrow center">Geschenke</p>
+          <h2>Für jeden Anlass das passende Geschenk.</h2>
+          <div class="category-grid">
+            <a href="#finder" class="category-card">
+              <span>Geburtstag</span>
+            </a>
+            <a href="#finder" class="category-card">
+              <span>Dankeschön</span>
+            </a>
+            <a href="#finder" class="category-card">
+              <span>Familie</span>
+            </a>
+            <a href="#finder" class="category-card">
+              <span>Freunde</span>
+            </a>
+            <a href="#finder" class="category-card">
+              <span>kleine Aufmerksamkeit</span>
+            </a>
+            <a href="#finder" class="category-card">
+              <span>besondere Momente</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section seasonal" id="saisonal">
+        <div class="container narrow">
+          <p class="eyebrow center">Saisonal</p>
+          <h2>Was gerade Saison hat</h2>
+          <p class="section-text center">
+            Flexible Seite für zukünftige saisonale Produkte. Nur echte Informationen verwenden.
+          </p>
+        </div>
+      </section>
+
+      <section class="section about" id="ueber-uns">
+        <div class="container narrow">
+          <p class="eyebrow center">Über uns</p>
+          <h2>Persönlich. Regional. Mit Freude zusammengestellt.</h2>
+          <p class="section-text center">
+            Wir freuen uns, regionale Geschenke liebevoll zusammenzustellen – mit Ruhe, Qualität und persönlicher Auswahl. Platz für spätere, echte Informationen.
+          </p>
+        </div>
+      </section>
+
+      <section class="section pickup" id="abholung">
+        <div class="container narrow">
+          <p class="eyebrow center">Abholung</p>
+          <h2>Bestellen. Abholen. Freude machen.</h2>
+          <div class="pickup-card">
+            <p>Biottos Lädeli</p>
+            <p>Hauptstrasse 90</p>
+            <p>8357 Guntershausen</p>
+            <p>Schweiz</p>
+            <p class="pickup-methods">Zahlung: TWINT oder Barzahlung bei Abholung.</p>
+            <p class="pickup-methods">Kein Versand.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="kontakt">
+        <div class="container narrow">
+          <p class="eyebrow center">Kontakt</p>
+          <h2>Wir freuen uns auf deine Nachricht.</h2>
+          <div class="contact-card">
+            <p>Biottos Lädeli</p>
+            <p>Hauptstrasse 90</p>
+            <p>8357 Guntershausen</p>
+            <p>Schweiz</p>
+            <div class="contact-links">
+              <a href="https://wa.me/41762552256" target="_blank" rel="noreferrer">WhatsApp: +41 76 255 22 56</a>
+              <span>Telefon: [TELEFONNUMMER EINFÜGEN]</span>
+              <span>E-Mail: [E-MAIL EINFÜGEN]</span>
+            </div>
+            <a href="https://wa.me/41762552256" target="_blank" rel="noreferrer" class="btn btn-primary">WhatsApp öffnen</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section legal" id="datenschutz">
+        <div class="container narrow">
+          <p class="eyebrow center">Datenschutz</p>
+          <h2>Datenschutz</h2>
+          <p class="section-text center">
+            Diese Seite sammelt keine unnötigen persönlichen Daten. Platzhalter für zukünftige rechtliche Informationen.
+          </p>
+        </div>
+      </section>
+
+      <section class="section legal" id="impressum">
+        <div class="container narrow">
+          <p class="eyebrow center">Impressum</p>
+          <h2>Impressum</h2>
+          <p class="section-text center">
+            Platzhalter für rechtliche Angaben. Bitte bei Bedarf ergänzen.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Biottos Lädeli</h3>
+          <p>Hauptstrasse 90</p>
+          <p>8357 Guntershausen</p>
+          <p>Schweiz</p>
+        </div>
+
+        <div>
+          <h4>Mehr</h4>
+          <ul>
+            <li><a href="#finder">Geschenk-Finder</a></li>
+            <li><a href="#produkte">Geschenkkörbe</a></li>
+            <li><a href="#produkte">Unsere Produkte</a></li>
+            <li><a href="#saisonal">Saisonal</a></li>
+            <li><a href="#geschenke">Geschenke</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Unternehmen</h4>
+          <ul>
+            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#abholung">Abholung</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#datenschutz">Datenschutz</a></li>
+            <li><a href="#impressum">Impressum</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/41762552256" target="_blank" rel="noreferrer">+41 76 255 22 56</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="sticky-action">
+      <a href="#finder" class="btn btn-primary">Geschenk finden</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
