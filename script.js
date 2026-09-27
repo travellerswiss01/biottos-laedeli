@@ -122,7 +122,7 @@ function renderProductCards() {
 
   container.innerHTML = products.map((product) => `
     <article class="product-card" data-product-id="${product.id}">
-      <div class="product-image">${product.mainImage}</div>
+      <div class="product-image product-image--${product.id}">${product.mainImage}</div>
       <div class="product-meta">
         <h3>${product.name}</h3>
         <span class="price">${formatPrice(product.price)}</span>
@@ -283,7 +283,7 @@ function renderResult() {
         <p class="eyebrow">Unser Vorschlag für dich</p>
       </div>
 
-      <div class="result-visual">${product.mainImage}</div>
+      <div class="result-visual result-visual--${product.id}">${product.mainImage}</div>
 
       <div class="result-head">
         <div>
